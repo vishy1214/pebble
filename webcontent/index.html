@@ -1,0 +1,101 @@
+<html>
+ <head>
+	<title>Pebble Jar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet"  href="mobile1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="mobile1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<link rel="stylesheet" href="mobile1.4.5/jquery.mobile.icons-1.4.5.min.css">
+	<link rel="stylesheet" href="mobile1.4.5/theme-classic.css">
+	<link rel="stylesheet" href="mobile1.4.5/jquery.mobile.structure-1.4.5.min.css">
+<!-- 	<link rel="shortcut icon" href="../favicon.ico"> -->
+
+
+	
+		<!-- <script>
+		$( document ).on( "pagecreate", function() {
+			$( "#theme-selector input" ).on( "change", function( event ) {
+				var themeClass = $( "#theme-selector input:checked" ).attr( "id" );
+
+				$( "#testpage" ).removeClass( "ui-page-theme-a ui-page-theme-b ui-page-theme-c ui-page-theme-d ui-page-theme-e" ).addClass( "ui-page-theme-" + themeClass );
+				$( "#ui-body-test" ).removeClass( "ui-body-a ui-body-b ui-body-c ui-body-d ui-body-e" ).addClass( "ui-body-" + themeClass );
+				$( "#ui-bar-test, #ui-bar-form" ).removeClass( "ui-bar-a ui-bar-b ui-bar-c ui-bar-d ui-bar-e" ).addClass( "ui-bar-" + themeClass );
+				$( ".ui-collapsible-content" ).removeClass( "ui-body-a ui-body-b ui-body-c ui-body-d ui-body-e" ).addClass( "ui-body-" + themeClass );
+				$( ".theme" ).text( themeClass );
+			});
+			$( "#opt-navbars input" ).on( "change", function( event ) {
+				if ( $( "#show" ).prop( "checked" ) ) {
+					$( "#testpage .ui-navbar" ).show();
+					$( "#testpage .ui-footer h4" ).hide();
+				} else if ( $( "#hide" ).prop( "checked" ) ) {
+					$( "#testpage .ui-navbar" ).hide();
+					$( "#testpage .ui-footer h4" ).show();
+				}
+			});
+			$( "#opt-shadow input" ).on( "change", function( event ) {
+				if ( $( "#on" ).prop( "checked" ) ) {
+					$( "#testpage" ).removeClass( "noshadow" );
+				} else if ( $( "#off" ).prop( "checked" ) ) {
+					$( "#testpage" ).addClass( "noshadow" );
+				}
+			});
+			$( "#opt-iconshadow input" ).on( "change", function( event ) {
+				if ( $( "#off1" ).prop( "checked" ) ) {
+					$( "#testpage" ).removeClass( "ui-shadow-icon" );
+				} else if ( $( "#on1" ).prop( "checked" ) ) {
+					$( "#testpage" ).addClass( "ui-shadow-icon" );
+				}
+			});
+			$( "#opt-gradient input" ).on( "change", function( event ) {
+				if ( $( "#off2" ).prop( "checked" ) ) {
+					$( "#testpage" ).addClass( "nogradient" );
+				} else if ( $( "#on2" ).prop( "checked" ) ) {
+					$( "#testpage" ).removeClass( "nogradient" );
+				}
+			});
+			$( "#opt-highlight input" ).on( "change", function( event ) {
+				if ( $( "#off3" ).prop( "checked" ) ) {
+					$( "#testpage" ).addClass( "nohighlight" );
+				} else if ( $( "#on3" ).prop( "checked" ) ) {
+					$( "#testpage" ).removeClass( "nohighlight" );
+				}
+			});
+		});
+	</script> -->
+</head> 
+
+<body>
+<div data-role="page">
+
+		<div data-role="header">
+			<h1 style="color: yellow;">Pebble Jar</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<div id="ui-body-test" class="ui-body ui-body-a ui-corner-all" style="margin-bottom: 1em;">			
+				<form>
+					<div class="ui-field-contain">
+						<input type="text"
+							name="uname" id="uname" value="" placeholder="user name">
+					</div>
+					<div class="ui-field-contain">
+						<input type="password"
+							name="password" id="password" value="" placeholder="password">
+					</div>
+
+					<div class="ui-field-contain">
+					<fieldset data-role="controlgroup" data-type="horizontal" style="text-align:right">
+						<input type="submit" id="newUser" value="New User">
+						<input type="submit" id="submit1" value="Sign In">
+				    </fieldset>
+					</div>
+					
+				</form>
+			</div>
+		</div>
+		<!--   <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div> -->
+ </div>
+</body>
+</html>
